@@ -1,73 +1,177 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<!-- the title of your webpage -->
-<title>Yordanos Ayelework's Portfolio</title>
-
-<!-- the style section has to do with how the webpage looks
-	unlike the html, which is concerned with the content of the page -->
-<style>
-.label {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	color: #ffffff;
-}
-
-.tableBorder {
-	border: solid 1px #102a71;
-	margin-top: 20px;
-}
-
-.message {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	color: #0066FF;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yordanos Ayelework</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 <body>
-	<form id = "frmMain">
-		<table bgcolor="#F4F5F7"
-			width="100%" class="tableBorder">
-			<tr>
-				<td class = "label" bgcolor="#102a71"><center><b>Yordanos Ayelework's Portfolio</b></center><br/>
-				<a href = "index.html" class = "label"><b>Biography</b></a> &nbsp;&nbsp;
-				<a href = "education.html" class = "label"><b>Education</b></a> &nbsp;&nbsp;
-				<a href = "work.html" class = "label"><b>Work</b></a>&nbsp;&nbsp;
-				<a href = "experience.html" class = "label"><b>Experience</b></a>&nbsp;&nbsp;
-				<a href = "contact.html" class = "label"><b>Contact</b></a>&nbsp;&nbsp;
-				</td>
-			</tr>
-			<tr>
-				<td class="message">
-					<table cellpadding="5px" cellspacing="5px">
-						<tr>
-							<td colspan = "2">
-								&nbsp;<br/>
-							</td>	
-						</tr>
-						<tr>
-							<td valign = "top">
-								<img src="images/piC.jpg" alt="Yordanos Ayelework" width="250">
-								<br/><br/>
-								<br/><br/>
-							</td>
-							<td valign = "top">
-								<p style="text-align:justify;">
-								Hi! My name is Yordanos Ayelework. I am currently a senior doing my Bachelor's of Science at McMurry University. I major in Computer Science and minor in Mathematics and Religion. I work as a Math and Computer Science tutor, as well as the Supplemental Instructor for Programming Fundamentals. Additionally, I am the president for the WarHawk Coders Club.</p>
-								<p style="text-align:justify;">
-								I'm interested in software engineering and web development. My interests include front-end and back-end development and working on collaborative projects to solve real world problems.
-							</p>
-							<p>
-								 Outside of Computer Science, my hobbies include books, art, music, and engaging in social gatherings. I love getting to know people and creating new meaningful connections.
-								</p>
-							</td>
-						</tr>
-					</table>					
-				</td>
-			</tr>
-		</table>	
-	</form>
+  <header class="hero-header" id="home">
+    <div class="overlay"></div>
+    <nav class="nav-bar">
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="intro-text">
+      <h1>Hi, I'm Yordanos Ayelework!</h1>
+      <p class="intro-subtitle">
+        <span class="text-slider-items">Web Developer,Frontend Developer,Backend Developer,Software Engineer</span>
+        <strong class="text-slider"></strong>
+      </p>
+    </div>
+  </header>
+  <section id="about" class="about-me-section">
+  <div class="about-me-container">
+    <div class="about-me-image">
+      <img src="images/prof pic.jpg" alt="Yordanos"/>
+      <div class="languages">
+        <div class="language">
+          <i class="fab fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="language">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="language">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="language">
+          <i class="devicon-php-plain"></i>
+          <p>PHP</p>
+        </div>
+        <div class="language">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
+        </div>
+        <div class="language">
+          <i class="fab fa-java"></i>
+          <p>Java</p>
+        </div>
+        <div class="language">
+          <i class="devicon-c-plain"></i>
+          <p>C</p>
+        </div>
+        <div class="language">
+          <i class="devicon-cplusplus-plain"></i>
+          <p>C++</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-me-text">
+      <h2>About Me</h2>
+      <p>
+        Hi! My name is Yordanos Ayelework. I am currently a senior doing my Bachelor's of Science at McMurry University. I major in Computer Science and minor in Mathematics and Religion. I work as a Math and Computer Science tutor, as well as the Supplemental Instructor for Programming Fundamentals. Additionally, I am the president of the WarHawk Coders Club.
+      </p>
+      <p>
+        I am passionate about software engineering and web development, with a strong interest in front-end and back-end development. I thrive on collaborating with others to create projects that solve real world problems.
+      </p>
+      <p>
+        Outside of Computer Science, my hobbies include books, art, music, and engaging in social gatherings. I love getting to know people and creating new meaningful connections.
+      </p>
+      <p>
+      </p>
+    </div>
+  </div>
+  </section>
+  <section id="portfolio" class="portfolio-section">
+    <p class="portfolio-title">Portfolio</p>
+    <h3 class="section-title">Latest Projects</h3>
+    <div class="projects-row">
+    <!-- HIP Project Box -->
+    <div class="project-box" id="hip" style="background-image: url('images/mcm_hip-1.png');">
+      <div class="project-overlay">
+        <h4 class="project-title"><a href="hip.html" class="project-link">Health Informatics Platform (HIP)</a></h4>
+        <p class="project-description">
+          Developer for a tool to analyze the impact of insulin types and dosages on managing diabetes. Posters presented at McMurry University's Symposium and ACU's Undergraduate Research, Creativity and Innovation Festival.
+        </p>
+      </div>
+    </div>
+
+    <!-- Prep Point Project Box -->
+    <div class="project-box" id="prep-point" style="background-image: url('images/prep-point.png');">
+      <div class="project-overlay">
+        <h4 class="project-title"><a href="https://www.preppoint.co/" class="project-link" target="_blank">Prep Point</a></h4>
+        <p class="project-description">
+          Cofounder for a non-profit nationwide web app that allows students to take practice exams in preparation for the Ethiopian Higher Education Entrance Examination.
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- Roles Section -->
+  <h3 class="section-title">Roles</h3>
+  <div class="roles-row">
+    <!-- WCC President Role -->
+    <div class="role-box" style="background-image: url('images/wcc.jpeg');">
+      <div class="role-overlay">
+        <div class="role-title">President of WCC Club</div>
+        <div class="role-description">
+          Took on a leadership role that includes leading the club meetings and activities, fostering a supportive environment that promotes education and growth, and mentoring lowerclassmen as they navigate the early stages of their degree.
+        </div>
+      </div>
+    </div>
+    
+    <!-- Math & Computer Science Tutor Role -->
+    <div class="role-box" style="background-image: url('images/tutor.png');">
+      <div class="role-overlay">
+        <div class="role-title">Mathematics & Computer Science Tutor</div>
+        <div class="role-description">
+          Provide personalized academic support to students who need asistance with Math or Computer Science. My responsibilities include clarifying topics, guiding students through assignments and homework, and helping them prepare for exams.
+        </div>
+      </div>
+    </div>
+
+    <!-- SI Leader Role -->
+    <div class="role-box" style="background-image: url('images/si.png');">
+      <div class="role-overlay">
+        <div class="role-title">Supplemetal Instruction Leader</div>
+        <div class="role-description">
+          Host and lead SI sessions to support students enrolled in Programming Fundamentals. My role involves breaking down complex programming concepts into smaller, more manageable components and designing interactive lessons and exercises that reinforce the class material.
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="contact">
+  <h3>Contact Me</h3>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h4>Get in Touch!</h4>
+      <p>If you would like to get in contact with me, please feel free to fill out the form or contact me directly:</p>
+      <ul>
+        <li><strong>Email:</strong><a href="mailto:ayelework.yordanos@mcm.edu" class="email"> ayelework.yordanos@mcm.edu </a>
+        <li><strong>Phone: </strong>+1 (301) 450-9050</li>
+        <li><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/yordanos-a-876941269" target="_blank">Yordanos Ayelework</a></li>
+      </ul>
+    </div>
+    <div class="contact-form">
+      <h4>Contact Form</h4>
+      <form action="form-handler.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" placeholder="Send me a message!" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
 </body>
 </html>
